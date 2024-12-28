@@ -1,0 +1,84 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    background-color: rgb(181, 238, 181) !important;
+    color: black;
+    font-size: 16px; 
+}
+
+h1, h2 {
+    color: #1e7642;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.product-card {
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #27ae60;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    height: 400px; 
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.btn-add-to-cart {
+    background-color: #27ae60;
+    color: white;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #219150;
+}
+
+#cart {
+    background-color: #f8f9fa; 
+    border: 1px solid #27ae60; 
+    border-radius: .5rem; 
+    padding: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#cart h4 {
+    color: #27ae60; 
+    margin-bottom: 15px; 
+}
+
+#cart-list {
+    max-height: 200px; 
+    overflow-y: auto; 
+    margin-bottom: 15px;
+}
+
+#cart-list li {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+#cart-list li:last-child {
+    border-bottom: none;
+}
+
+#total-price {
+    font-weight: bold;
+    font-size: 1.25rem;
+}

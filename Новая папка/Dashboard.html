@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="Dashboard.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="header text-center text-success">
+            <h1>Biodegradable Product Sales Dashboard</h1>
+            <h4>Current sales data</h4>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-white bg-success">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <i class="fas fa-dollar-sign icon"></i>
+                                <h5 class="card-title">Total sales</h5>
+                                <h2 class="card-text">150,000€</h2>
+                            </div>
+                            <div>
+                                <i class="fas fa-users icon"></i>
+                                <h5 class="card-title">Clients</h5>
+                                <h2 class="card-text">320</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-primary">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <i class="fas fa-box icon"></i>
+                                <h5 class="card-title">Products</h5>
+                                <h2 class="card-text">75</h2>
+                            </div>
+                            <div>
+                                <i class="fas fa-chart-bar icon"></i>
+                                <h5 class="card-title">Height (%)</h5>
+                                <h2 class="card-text">25%</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-warning">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Sales trends</h5>
+                        <canvas id="salesTrendChart" class="chart-container"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-success">Detailed sales by month</h4>
+                        <canvas id="monthlySalesChart" class="chart-container"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-success">Sales table</h4>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Month</th>
+                                    <th>Sales (€)</th>
+                                    <th>Number of products</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Jan</td>
+                                    <td>10000</td>
+                                    <td>120</td>
+                                </tr>
+                                <tr>
+                                    <td>Feb</td>
+                                    <td>20000</td>
+                                    <td>240</td>
+                                </tr>
+                                <tr>
+                                    <td>Mar</td>
+                                    <td>15000</td>
+                                    <td>150</td>
+                                </tr>
+                                <tr>
+                                    <td>Apr</td>
+                                    <td>30000</td>
+                                    <td>280</td>
+                                </tr>
+                                <tr>
+                                    <td>May</td>
+                                    <td>40000</td>
+                                    <td>340</td>
+                                </tr>
+                                <tr>
+                                    <td>Jun</td>
+                                    <td>35000</td>
+                                    <td>300</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-success">News and announcements</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <strong>New product line</strong><br>
+                                A new line of biodegradable packaging has been launched.
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Discounts on your favorite products</strong><br>
+                                10% discount on all products in June!
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Logo update</strong><br>
+                                We have unveiled our new logo. Check it out!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-success">Growth chart by product category</h4>
+                        <canvas id="categorySalesChart" class="chart-container"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-success">Sales Forecasting</h4>
+                        <canvas id="predictedSalesChart" class="chart-container"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-success">User Reviews</h4>
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <h5>Alexey:</h5>
+                                <p>Excellent service and fast delivery!</p>
+                            </div>
+                            <div class="list-group-item">
+                                <h5>Maria:</h5>
+                                <p>The product is of excellent quality, I will order again.</p>
+                            </div>
+                            <div class="list-group-item">
+                                <h5>Svetlana:</h5>
+                                <p>I like that you use eco-friendly packaging.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-success">Promotions and offers</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">15% discount on all new orders until the end of the month!</li>
+                            <li class="list-group-item">Buy 5 packs - free shipping!</li>
+                            <li class="list-group-item">Are you going on a business trip? Get a special price on a batch of products!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="Dashboard.js"></script>
+
+</body>
+</html>

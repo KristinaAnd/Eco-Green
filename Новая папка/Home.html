@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco & Green</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="bi-recycle" viewBox="0 0 16 16">
+        <title>bi-recycle</title>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.5.5 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244z"></path>
+      </symbol>
+      <symbol id="home" viewBox="0 0 16 16">
+        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+      </symbol>
+      <symbol id="speedometer2" viewBox="0 0 16 16">
+        <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+        <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+      </symbol>
+      <symbol id="table" viewBox="0 0 16 16">
+        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+      </symbol>
+      <symbol id="people-circle" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+      </symbol>
+      <symbol id="grid" viewBox="0 0 16 16">
+        <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+      </symbol>
+    </svg>
+
+</head>
+
+<body>
+    <header class="Header">
+      <div class="px-4 py-1 text-bg-success border-bottom">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a class="d-flex align-items-center my-2 my-lg-auto me-lg-auto text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Recycle"><use xlink:href="#bi-recycle"/></svg>
+            <div class="dropdown">
+              <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About company
+              </button>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button">Why us?</button></li>
+                <li><button class="dropdown-item" type="button">News</button></li>
+                <li><button class="dropdown-item" type="button">Staff</button></li>
+                <li><button href="SDG.html" class="dropdown-item" type="button">SDG 13: Climate Action</button></li>
+                <li><button class="dropdown-item" type="button">Communication</button></li>
+              </ul>
+            </div>
+          </a>
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 py-1 text-small">
+            <li>
+              <a href="Home.html" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="Dashboard.html" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="Orders.html" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
+                Orders
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
+                Products
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
+                Customers
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="px-3 py-2 border-bottom mb-3 text-bg-light">
+      <div class="container d-flex flex-wrap justify-content-center px-1">
+        <div class="dropdown text-end px-1 py-1">
+          <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://ros-test.ru/uploads/services/60da0b221bac95f51c392b3203c2e6a5_1686043440.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small">
+            <li><a class="dropdown-item" href="#">New project</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Log out</a></li>
+          </ul>
+        </div>
+        <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto w-50" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+        <div class="text-end">
+          <button type="button" class="btn btn-light text-success me-2 border"><a class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="Login.html">Login</a></button>
+          <button type="button" class="btn btn-success text-success me-2 border"><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="Login.html">Sign in</a></button>
+        </div>
+      </div>
+    </header>
+  
+  <main>
+    <section class="sliders">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-caption text-start text-dark">
+                  <img src="https://giftsandfreeadvice.com/wp-content/uploads/2020/03/eco-1.jpg" class="d-block w-100" alt="...">
+                  <h1>Environment</h1>
+                  <h5><p class="slide">Take a step towards environmental protection!</p></h5>
+                  <p><a class="btn btn-lg btn-success" href="Login.html">Sign up today</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption text-start text-dark">
+                <img src="https://www.awarenessmart.com/wp-content/uploads/2023/07/shutterstock_1750773434-1-scaled-1.jpg" class="d-block w-100" alt="...">
+                <h1>SDGs</h1>
+                <h5><p class="slide">Solutions to Climate Change.</p></h5>
+                <p><a class="btn btn-lg btn-success" href="SDG.html">Learn more</a></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption text-start text-dark">
+                <img src="https://bonduelle.ru/storage/uploads/site/medialibrary/388/388583602bdddcd869e3b2d6b4f48936.jpg" class="d-block w-100" alt="...">
+                <h1>Production</h1>
+                <h5><p class="slide">See the production process of Eco & Green products.</p></h5>
+                <p><a class="btn btn-lg btn-success" href="Gallery.html">Browse gallery</a></p>
+              </div>
+            </div>
+          </div>
+        <section>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </section>
+      </div>
+    </section>
+    
+    <section class="cards">
+        <div class="w-100 p-5" style="background-color: rgb(181, 238, 181); border-radius: .5rem .5rem 0 0;">
+          <div class="row justify-content-center mb-3">
+            <div class="col-md-12">
+              <div class="card shadow-0 border rounded-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                      <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                        <img src="https://tprint.ru/wp-content/uploads/2024/06/upakovka-dlya-kosmetiki-s-derevom-8.webp"
+                          class="w-100" />
+                        <a href="#!">
+                          <div class="hover-overlay">
+                            <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                      <h5>Biodegradable paper bags and packaging</h5>
+                      <div class="d-flex flex-row">
+                        <div class="text-success mb-1 me-2">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>Remaining goods: 1310</span>
+                      </div>
+                      <div class="mt-1 mb-0 text-muted small">
+                        <span>100% Eco</span>
+                        <span class="text-success">  •  </span>
+                        <span>Unique design</span>
+                        <span class="text-success">  •  </span>
+                        <span>Natural resins<br /></span>
+                      </div>
+                      <div class="mb-2 text-muted small">
+                        <span>Natural dyes</span>
+                        <span class="text-success">  •  </span>
+                        <span>Bamboo fiber</span>
+                        <span class="text-success">  •  </span>
+                        <span>Kraft paper<br /></span>
+                      </div>
+                      <p class="text-truncate mb-4 mb-md-0 text-wrap">
+                        Biodegradable paper bags made from recycled paper and certified wood fibres decompose safely in nature, minimising pollution. Bamboo fibre packaging, made from fast-growing bamboo without chemical fertilizers, is strong and easily decomposes.
+                      </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                      <div class="d-flex flex-row align-items-center mb-1">
+                        <h4 class="mb-1 me-1">€0.69</h4>
+                        <span class="text-success"><s>€0.76</s></span>
+                      </div>
+                      <h6 class="text-success">Free delivery</h6>
+                      <div class="d-flex flex-column mt-4">
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-success btn-sm" type="button">Details</button>
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-success btn-sm mt-2" type="button">Add to wishlist</button>
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-success btn-sm mt-2" type="button"><a class="link-dark" href="Orders.html">Buy</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-3">
+            <div class="col-md-12">
+              <div class="card shadow-0 border rounded-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                      <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                        <img src="https://avatars.mds.yandex.net/i?id=cf91cd5aa71e23159b0ff41cacf775d9_l-6840111-images-thumbs&n=13"
+                          class="w-100" />
+                        <a href="#!">
+                          <div class="hover-overlay">
+                            <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                      <h5>Biodegradable cups</h5>
+                      <div class="d-flex flex-row">
+                        <div class="text-success mb-1 me-2">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>Remaining goods: 1289</span>
+                      </div>
+                      <div class="mt-1 mb-0 text-muted small">
+                        <span>100% Eco</span>
+                        <span class="text-success">  •  </span>
+                        <span>Unique design</span>
+                        <span class="text-success">  •  </span>
+                        <span>Natural resins<br /></span>
+                      </div>
+                      <div class="mb-2 text-muted small">
+                        <span>Natural dyes</span>
+                        <span class="text-success">  •  </span>
+                        <span>Sugar cane</span>
+                        <span class="text-success">  •  </span>
+                        <span>Cellulose<br /></span>
+                      </div>
+                      <p class="text-truncate mb-4 mb-md-0 text-wrap">
+                        Biodegradable cups are environmentally friendly, durable and moisture-resistant, suitable for hot and cold drinks. Their use helps reduce waste and carbon footprint, supporting sustainable development.
+                      </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                      <div class="d-flex flex-row align-items-center mb-1">
+                        <h4 class="mb-1 me-1">€0.16</h4>
+                        <span class="text-success"><s>€0.18</s></span>
+                      </div>
+                      <h6 class="text-success">Free delivery</h6>
+                      <div class="d-flex flex-column mt-4">
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-success btn-sm" type="button">Details</button>
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-success btn-sm mt-2" type="button">Add to wishlist</button>
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-success btn-sm mt-2" type="button"><a class="link-dark" href="Orders.html">Buy</a></button>                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-3">
+            <div class="col-md-12">
+              <div class="card shadow-0 border rounded-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                      <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                        <img src="https://img.alicdn.com/imgextra/i3/34908436295666436/O1CN01IZhIdu1xPjpmGNuq9_!!34908436295666436-0-tbvideo.jpg"
+                          class="w-100" />
+                        <a href="#!">
+                          <div class="hover-overlay">
+                            <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                      <h5>Biodegradable cutlery (forks, spoons and knives)</h5>
+                      <div class="d-flex flex-row">
+                        <div class="text-success mb-1 me-2">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>Remaining goods: 1145</span>
+                      </div>
+                      <div class="mt-1 mb-0 text-muted small">
+                        <span>100% Eco</span>
+                        <span class="text-success">  •  </span>
+                        <span>Unique design</span>
+                        <span class="text-success">  •  </span>
+                        <span>Natural resins<br /></span>
+                      </div>
+                      <div class="mb-2 text-muted small">
+                        <span>Natural dyes</span>
+                        <span class="text-success">  •  </span>
+                        <span>Corn starch</span>
+                        <span class="text-success">  •  </span>
+                        <span>Biodegradable polymers<br /></span>
+                      </div>
+                      <p class="text-truncate mb-4 mb-md-0 text-wrap">
+                        Biodegradable cutlery is durable, suitable for picnics and restaurants, and decomposes in nature without harming the environment. In addition, it is safe for health, as it does not contain toxic substances.
+                      </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                      <div class="d-flex flex-row align-items-center mb-1">
+                        <h4 class="mb-1 me-1">€0.30</h4>
+                        <span class="text-success"><s>€0.33</s></span>
+                      </div>
+                      <h6 class="text-success">Free delivery</h6>
+                      <div class="d-flex flex-column mt-4">
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-success btn-sm" type="button">Details</button>
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-success btn-sm mt-2" type="button">Add to wishlist</button>
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-success btn-sm mt-2" type="button"><a class="link-dark" href="Orders.html">Buy</a></button>                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div class="card shadow-0 border rounded-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                      <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                        <img src="https://leakshare.org/wp-content/uploads/2019/06/Straws-from-Coconut-Leaves.jpg"
+                          class="w-100" />
+                        <a href="#!">
+                          <div class="hover-overlay">
+                            <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                      <h5>Biodegradable drinking straws</h5>
+                      <div class="d-flex flex-row">
+                        <div class="text-success mb-1 me-2">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>Remaining goods: 1310</span>
+                      </div>
+                      <div class="mt-1 mb-0 text-muted small">
+                        <span>100% Eco</span>
+                        <span class="text-success">  •  </span>
+                        <span>Unique design</span>
+                        <span class="text-success">  •  </span>
+                        <span>Natural resins<br /></span>
+                      </div>
+                      <div class="mb-2 text-muted small">
+                        <span>Natural dyes</span>
+                        <span class="text-success">  •  </span>
+                        <span>Banana leaves</span>
+                        <span class="text-success">  •  </span>
+                        <span>Water<br /></span>
+                      </div>
+                      <p class="text-truncate mb-4 mb-md-0 text-wrap">
+                        Biodegradable straws are an eco-friendly alternative to plastic straws. They are lightweight, durable and convenient, ideal for cafes and events, emphasizing environmental awareness.
+                      </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                      <div class="d-flex flex-row align-items-center mb-1">
+                        <h4 class="mb-1 me-1">€0.10</h4>
+                        <span class="text-success"><s>€0.11</s></span>
+                      </div>
+                      <h6 class="text-success">Free delivery</h6>
+                      <div class="d-flex flex-column mt-4">
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-success btn-sm" type="button">Details</button>
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-success btn-sm mt-2" type="button">Add to wishlist</button>
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-success btn-sm mt-2" type="button"><a class="link-dark" href="Orders.html">Buy</a></button>                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+    </section>
+
+    <div class="container">
+      <div class="py-5 justify-content-center">
+        <div class="text-center text-success">
+          <svg class="bi me-2" width="100" height="90" role="img" aria-label="Recycle"><use xlink:href="#bi-recycle"/></svg>
+          <h2>Checkout form</h2>
+          <p class="lead text-dark">Fill out this form to place an order in our store.</p>
+        </div>
+        <br>
+        <div class="row g-5">
+          <div class="col-md-7 col-lg-7">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-success">Product order form</span>
+              <span class="badge bg-success rounded-pill">1</span>
+            </h4>
+            <form id="checkoutForm" class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="productName" class="form-label">Product Name</label>
+                  <input type="text" class="form-control" id="productName" placeholder="Biodegradable paper bags" required>
+                  <div class="invalid-feedback">
+                    Valid product name is required.
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="productQuantity" class="form-label">Quantity</label>
+                  <input type="number" class="form-control" id="productQuantity" placeholder="1" required>
+                  <div class="invalid-feedback">
+                    Valid quantity is required.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="productDescription" class="form-label">Description</label>
+                  <input type="text" class="form-control" id="productDescription" placeholder="Made from bamboo fibers" required>
+                  <div class="invalid-feedback">
+                    Valid description is required.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="productPrice" class="form-label">Price</label>
+                  <input type="number" class="form-control" id="productPrice" placeholder="12" required>
+                  <div class="invalid-feedback">
+                    Valid price is required.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="productCategory" class="form-label">Category</label>
+                  <select class="form-select" id="productCategory" required>
+                    <option value="">Choose...</option>
+                    <option value="Paper bags">Paper bags</option>
+                    <option value="Cups">Cups</option>
+                    <option value="Cutlery">Cutlery</option>
+                    <option value="Straws">Straws</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Valid category is required.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="deliveryDate" class="form-label">Delivery Date</label>
+                  <input type="date" class="form-control" id="deliveryDate" required>
+                  <div class="invalid-feedback">
+                    Valid delivery date is required.
+                  </div>
+                </div>
+              </div>
+              <hr class="my-4">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-success">Billing address</span>
+                <span class="badge bg-success rounded-pill">2</span>
+              </h4>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="Name" value="" required>
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="" required>
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="username" class="form-label">User name</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="User" required>
+                  <div class="invalid-feedback">
+                      Your username is required.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="User@urfu.me" required>
+                  <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="Yekaterinburg, Mira st. 32" required>
+                  <div class="invalid-feedback">
+                    Please enter your shipping address.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="address2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="address2" placeholder="Entrance 6, Floor 25, Apartment 1394">
+                </div>
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Country</label>
+                  <select class="form-select" id="country" required>
+                    <option value="">Choose...</option>
+                    <option value="AF">Afghanistan</option>
+                    <option value="AX">Åland Islands</option>
+                    <option value="AL">Albania</option>
+                    <option value="DZ">Algeria</option>
+                    <option value="AS">American Samoa</option>
+                    <option value="AD">Andorra</option>
+                    <option value="AO">Angola</option>
+                    <option value="AI">Anguilla</option>
+                    <option value="AQ">Antarctica</option>
+                    <option value="AG">Antigua and Barbuda</option>
+                    <option value="AR">Argentina</option>
+                    <option value="AM">Armenia</option>
+                    <option value="AW">Aruba</option>
+                    <option value="AU">Australia</option>
+                    <option value="AT">Austria</option>
+                    <option value="AZ">Azerbaijan</option>
+                    <option value="BS">Bahamas</option>
+                    <option value="BH">Bahrain</option>
+                    <option value="BD">Bangladesh</option>
+                    <option value="BB">Barbados</option>
+                    <option value="BY">Belarus</option>
+                    <option value="BE">Belgium</option>
+                    <option value="BZ">Belize</option>
+                    <option value="BJ">Benin</option>
+                    <option value="BM">Bermuda</option>
+                    <option value="BT">Bhutan</option>
+                    <option value="BO">Bolivia (Plurinational State of)</option>
+                    <option value="BA">Bosnia and Herzegovina</option>
+                    <option value="BW">Botswana</option>
+                    <option value="BV">Bouvet Island</option>
+                    <option value="BR">Brazil</option>
+                    <option value="IO">British Indian Ocean Territory</option>
+                    <option value="BN">Brunei Darussalam</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="BF">Burkina Faso</option>
+                    <option value="BI">Burundi</option>
+                    <option value="CV">Cabo Verde</option>
+                    <option value="KH">Cambodia</option>
+                    <option value="CM">Cameroon</option>
+                    <option value="CA">Canada</option>
+                    <option value="BQ">Caribbean Netherlands</option>
+                    <option value="KY">Cayman Islands</option>
+                    <option value="CF">Central African Republic</option>
+                    <option value="TD">Chad</option>
+                    <option value="CL">Chile</option>
+                    <option value="CN">China</option>
+                    <option value="CX">Christmas Island</option>
+                    <option value="CC">Cocos (Keeling) Islands</option>
+                    <option value="CO">Colombia</option>
+                    <option value="KM">Comoros</option>
+                    <option value="CG">Congo</option>
+                    <option value="CD">Congo, Democratic Republic of the</option>
+                    <option value="CK">Cook Islands</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="HR">Croatia</option>
+                    <option value="CU">Cuba</option>
+                    <option value="CW">Curaçao</option>
+                    <option value="CY">Cyprus</option>
+                    <option value="CZ">Czech Republic</option>
+                    <option value="CI">Côte d'Ivoire</option>
+                    <option value="DK">Denmark</option>
+                    <option value="DJ">Djibouti</option>
+                    <option value="DM">Dominica</option>
+                    <option value="DO">Dominican Republic</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="EG">Egypt</option>
+                    <option value="SV">El Salvador</option>
+                    <option value="GQ">Equatorial Guinea</option>
+                    <option value="ER">Eritrea</option>
+                    <option value="EE">Estonia</option>
+                    <option value="SZ">Eswatini (Swaziland)</option>
+                    <option value="ET">Ethiopia</option>
+                    <option value="FK">Falkland Islands (Malvinas)</option>
+                    <option value="FO">Faroe Islands</option>
+                    <option value="FJ">Fiji</option>
+                    <option value="FI">Finland</option>
+                    <option value="FR">France</option>
+                    <option value="GF">French Guiana</option>
+                    <option value="PF">French Polynesia</option>
+                    <option value="TF">French Southern Territories</option>
+                    <option value="GA">Gabon</option>
+                    <option value="GM">Gambia</option>
+                    <option value="GE">Georgia</option>
+                    <option value="DE">Germany</option>
+                    <option value="GH">Ghana</option>
+                    <option value="GI">Gibraltar</option>
+                    <option value="GR">Greece</option>
+                    <option value="GL">Greenland</option>
+                    <option value="GD">Grenada</option>
+                    <option value="GP">Guadeloupe</option>
+                    <option value="GU">Guam</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="GG">Guernsey</option>
+                    <option value="GN">Guinea</option>
+                    <option value="GW">Guinea-Bissau</option>
+                    <option value="GY">Guyana</option>
+                    <option value="HT">Haiti</option>
+                    <option value="HM">Heard Island and Mcdonald Islands</option>
+                    <option value="HN">Honduras</option>
+                    <option value="HK">Hong Kong</option>
+                    <option value="HU">Hungary</option>
+                    <option value="IS">Iceland</option>
+                    <option value="IN">India</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IR">Iran</option>
+                    <option value="IQ">Iraq</option>
+                    <option value="IE">Ireland</option>
+                    <option value="IM">Isle of Man</option>
+                    <option value="IL">Israel</option>
+                    <option value="IT">Italy</option>
+                    <option value="JM">Jamaica</option>
+                    <option value="JP">Japan</option>
+                    <option value="JE">Jersey</option>
+                    <option value="JO">Jordan</option>
+                    <option value="KZ">Kazakhstan</option>
+                    <option value="KE">Kenya</option>
+                    <option value="KI">Kiribati</option>
+                    <option value="KP">Korea, North</option>
+                    <option value="KR">Korea, South</option>
+                    <option value="XK">Kosovo</option>
+                    <option value="KW">Kuwait</option>
+                    <option value="KG">Kyrgyzstan</option>
+                    <option value="LA">Lao People's Democratic Republic</option>
+                    <option value="LV">Latvia</option>
+                    <option value="LB">Lebanon</option>
+                    <option value="LS">Lesotho</option>
+                    <option value="LR">Liberia</option>
+                    <option value="LY">Libya</option>
+                    <option value="LI">Liechtenstein</option>
+                    <option value="LT">Lithuania</option>
+                    <option value="LU">Luxembourg</option>
+                    <option value="MO">Macao</option>
+                    <option value="MK">Macedonia North</option>
+                    <option value="MG">Madagascar</option>
+                    <option value="MW">Malawi</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="MV">Maldives</option>
+                    <option value="ML">Mali</option>
+                    <option value="MT">Malta</option>
+                    <option value="MH">Marshall Islands</option>
+                    <option value="MQ">Martinique</option>
+                    <option value="MR">Mauritania</option>
+                    <option value="MU">Mauritius</option>
+                    <option value="YT">Mayotte</option>
+                    <option value="MX">Mexico</option>
+                    <option value="FM">Micronesia</option>
+                    <option value="MD">Moldova</option>
+                    <option value="MC">Monaco</option>
+                    <option value="MN">Mongolia</option>
+                    <option value="ME">Montenegro</option>
+                    <option value="MS">Montserrat</option>
+                    <option value="MA">Morocco</option>
+                    <option value="MZ">Mozambique</option>
+                    <option value="MM">Myanmar (Burma)</option>
+                    <option value="NA">Namibia</option>
+                    <option value="NR">Nauru</option>
+                    <option value="NP">Nepal</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="AN">Netherlands Antilles</option>
+                    <option value="NC">New Caledonia</option>
+                    <option value="NZ">New Zealand</option>
+                    <option value="NI">Nicaragua</option>
+                    <option value="NE">Niger</option>
+                    <option value="NG">Nigeria</option>
+                    <option value="NU">Niue</option>
+                    <option value="NF">Norfolk Island</option>
+                    <option value="MP">Northern Mariana Islands</option>
+                    <option value="NO">Norway</option>
+                    <option value="OM">Oman</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="PW">Palau</option>
+                    <option value="PS">Palestine</option>
+                    <option value="PA">Panama</option>
+                    <option value="PG">Papua New Guinea</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Peru</option>
+                    <option value="PH">Philippines</option>
+                    <option value="PN">Pitcairn Islands</option>
+                    <option value="PL">Poland</option>
+                    <option value="PT">Portugal</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="QA">Qatar</option>
+                    <option value="RE">Reunion</option>
+                    <option value="RO">Romania</option>
+                    <option value="RU">Russian Federation</option>
+                    <option value="RW">Rwanda</option>
+                    <option value="BL">Saint Barthelemy</option>
+                    <option value="SH">Saint Helena</option>
+                    <option value="KN">Saint Kitts and Nevis</option>
+                    <option value="LC">Saint Lucia</option>
+                    <option value="MF">Saint Martin</option>
+                    <option value="PM">Saint Pierre and Miquelon</option>
+                    <option value="VC">Saint Vincent and the Grenadines</option>
+                    <option value="WS">Samoa</option>
+                    <option value="SM">San Marino</option>
+                    <option value="ST">Sao Tome and Principe</option>
+                    <option value="SA">Saudi Arabia</option>
+                    <option value="SN">Senegal</option>
+                    <option value="RS">Serbia</option>
+                    <option value="CS">Serbia and Montenegro</option>
+                    <option value="SC">Seychelles</option>
+                    <option value="SL">Sierra Leone</option>
+                    <option value="SG">Singapore</option>
+                    <option value="SX">Sint Maarten</option>
+                    <option value="SK">Slovakia</option>
+                    <option value="SI">Slovenia</option>
+                    <option value="SB">Solomon Islands</option>
+                    <option value="SO">Somalia</option>
+                    <option value="ZA">South Africa</option>
+                    <option value="GS">South Georgia and the South Sandwich Islands</option>
+                    <option value="SS">South Sudan</option>
+                    <option value="ES">Spain</option>
+                    <option value="LK">Sri Lanka</option>
+                    <option value="SD">Sudan</option>
+                    <option value="SR">Suriname</option>
+                    <option value="SJ">Svalbard and Jan Mayen</option>
+                    <option value="SE">Sweden</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="SY">Syria</option>
+                    <option value="TW">Taiwan</option>
+                    <option value="TJ">Tajikistan</option>
+                    <option value="TZ">Tanzania</option>
+                    <option value="TH">Thailand</option>
+                    <option value="TL">Timor-Leste</option>
+                    <option value="TG">Togo</option>
+                    <option value="TK">Tokelau</option>
+                    <option value="TO">Tonga</option>
+                    <option value="TT">Trinidad and Tobago</option>
+                    <option value="TN">Tunisia</option>
+                    <option value="TR">Turkey (Türkiye)</option>
+                    <option value="TM">Turkmenistan</option>
+                    <option value="TC">Turks and Caicos Islands</option>
+                    <option value="TV">Tuvalu</option>
+                    <option value="UM">U.S. Outlying Islands</option>
+                    <option value="UG">Uganda</option>
+                    <option value="UA">Ukraine</option>
+                    <option value="AE">United Arab Emirates</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="US">United States</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="UZ">Uzbekistan</option>
+                    <option value="VU">Vanuatu</option>
+                    <option value="VA">Vatican City Holy See</option>
+                    <option value="VE">Venezuela</option>
+                    <option value="VN">Vietnam</option>
+                    <option value="VG">Virgin Islands, British</option>
+                    <option value="VI">Virgin Islands, U.S</option>
+                    <option value="WF">Wallis and Futuna</option>
+                    <option value="EH">Western Sahara</option>
+                    <option value="YE">Yemen</option>
+                    <option value="ZM">Zambia</option>
+                    <option value="ZW">Zimbabwe</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="state" class="form-label">State / Region</label>
+                  <input type="text" class="form-control" id="state" placeholder="Sverdlovsk region" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid state / region.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">Postal code</label>
+                  <input type="text" class="form-control" id="zip" placeholder="347918" required>
+                  <div class="invalid-feedback">
+                    Postal code required.
+                  </div>
+                </div>
+              </div>
+              <hr class="my-4">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">Delivery address is the same as my billing address</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">Save this information for next time</label>
+              </div>
+              <hr class="my-3">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-success">Payment</span>
+                <span class="badge bg-success rounded-pill">3</span>
+              </h4>
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="credit">Credit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="debit">Debit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="paypal">ЮMoney</label>
+                </div>
+              </div>
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Name on card</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="Tinkoff" required>
+                  <small class="text-body-secondary">Full name as displayed on card</small>
+                  <div class="invalid-feedback">
+                    Name on card is required
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label">Credit card number</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="3648 0284 2917 2063" required>
+                  <div class="invalid-feedback">
+                    Credit card number is required
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="cc-expiration" class="form-label">Expiration</label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="05/29" required>
+                  <div class="invalid-feedback">
+                    Expiration date required
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="cc-cvv" class="form-label">CVV</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="031" required>
+                  <div class="invalid-feedback">
+                    Security code required
+                  </div>
+                </div>
+              </div>
+              <hr class="my-4">
+              <button class="w-100 btn btn-success btn-lg" type="submit">Submit Order</button>
+            </form>
+          </div>
+
+          <div class="col-md-5 col-lg-5 order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-success">Your cart</span>
+              <span class="badge bg-success rounded-pill">4</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Biodegradable paper bags and packaging</h6>
+                  <small class="text-body-secondary">made from bamboo fibers</small>
+                </div>
+                <span class="text-body-secondary">€12</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Biodegradable cups</h6>
+                  <small class="text-body-secondary">made from sugar cane</small>
+                </div>
+                <span class="text-body-secondary">€8</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Biodegradable cutlery (forks, spoons and knives)</h6>
+                  <small class="text-body-secondary">made from corn starch</small>
+                </div>
+                <span class="text-body-secondary">€5</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Biodegradable drinking straws</h6>
+                  <small class="text-body-secondary">made from banana leaves</small>
+                </div>
+                <span class="text-body-secondary">€11</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                <div class="text-success">
+                  <h6 class="my-0">Promo code</h6>
+                  <small>5C4O8DE</small>
+                </div>
+                <span class="text-success">−€5</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (EUR)</span>
+                <strong>€31</strong>
+              </li>
+            </ul>
+            <form class="card p-2">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Promo code">
+                <button type="submit" class="btn btn-success">Redeem</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="Footer">
+    <div class="text-bg-success px-3">
+      <div class="row py-2">
+        <div class="text1 col-12 col-md-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="d-block mb-3 mx-3" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+          <small class="d-block mb-3 text-white">&copy; 2015–2024</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Association</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary text-white" href="#">Strategy</a></li>
+            <li><a class="link-secondary text-white" href="#">Results</a></li>
+            <li><a class="link-secondary text-white" href="#">Association Team</a></li>
+            <li><a class="link-secondary text-white" href="#">List of members of the Association</a></li>
+            <li><a class="link-secondary text-white" href="#">Partners</a></li>
+            <li><a class="link-secondary text-white" href="#">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Industry News</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary text-white" href="#">Association News</a></li>
+            <li><a class="link-secondary text-white" href="#">News of participants</a></li>
+            <li><a class="link-secondary text-white" href="#">Legislation</a></li>
+            <li><a class="link-secondary text-white" href="#">World News</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Customer support</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary text-white" href="#">Delivery info</a></li>
+            <li><a class="link-secondary text-white" href="#">Payment methods</a></li>
+            <li><a class="link-secondary text-white" href="#">Right of withdrawal</a></li>
+            <li><a class="link-secondary text-white" href="#">Tips & Inspiration</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About us</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary text-white" href="#">About Eco & Green</a></li>
+            <li><a class="link-secondary text-white" href="Team.html">Our team</a></li>
+            <li><a class="link-secondary text-white" href="Vacancies.html">Vacancies</a></li>
+            <li><a class="link-secondary text-white" href="FAQ.html">FAQ</a></li>
+            <li><a class="link-secondary text-white" href="#">Materials guide</a></li>
+            <li><a class="link-secondary text-white" href="#">What is eco-friendly packaging?</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
